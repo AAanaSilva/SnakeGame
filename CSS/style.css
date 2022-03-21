@@ -1,0 +1,53 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+.corpo {
+    background: url("../img/background.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} 
+
+#pontuacao {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blanchedalmond;
+}
+
+#board {
+    width: 90vh;
+    height: 90vh;
+    background: linear-gradient(#195203, #98cf17);
+    border: 7px solid #000;
+    display:grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr)
+}
+
+div.head {
+    background-color: rgb(190, 142, 10);
+    border: 2px solid #000;
+    border-radius: 15px;
+
+}
+
+div.snake {
+    background: #c7aa05;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+div.fruta {
+    background: url("../img/fruta.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
